@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <defaultsMap>
+        <entry>
+            <key>FAQ_BASE_URL</key>
+            <value>https://...</value>
+        </entry>
+
+        <entry>
+            <key>PRIVACY_POLICY_URL</key>
+            <value>https://...</value>
+        </entry>
+
+        <entry>
+            <key>ONESIGNAL_APP_ID_CLIENT</key>
+            <value>One Signal Id</value>
+        </entry>
+
+        <entry>
+            <key>APP_BASE_URL</key>
+            <value>https://...</value>
+        </entry>
+    </defaultsMap>
+</resources>
