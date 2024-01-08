@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/foreman_navigation_map"
+    app:startDestination="@id/dateAndLocationFragment">
+
+    <fragment
+        android:id="@+id/dateAndLocationFragment"
+        android:name="it.dsequino.apitest.fragments.foreman.DateAndLocationFragment"
+        android:label="fragment_date_and_location"
+        tools:layout="@layout/fragment_date_and_location" />
+</navigation>

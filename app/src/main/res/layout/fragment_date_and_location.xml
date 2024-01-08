@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.foreman.DateAndLocationFragment"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/background_dark_blue_radius_top_24"
+        android:weightSum="5"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/btnPreviousMonth"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/arrow"
+            android:tint="@color/white"
+            android:rotation="180"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/monthName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:fontFamily="@font/sansation_regular"
+            android:textSize="24sp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/btnNextMonth"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/arrow"
+            android:tint="@color/white"
+            tools:ignore="UseAppTint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/background_dark_blue_radius_bottom_24">
+
+        <include
+            android:id="@+id/titlesContainer"
+            layout="@layout/calendar_day_titles_container" />
+
+        <com.kizitonwose.calendar.view.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cv_dayViewResource="@layout/calendar_day_layout" />
+
+    </LinearLayout>
+</LinearLayout>

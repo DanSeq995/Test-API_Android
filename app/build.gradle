@@ -13,10 +13,10 @@ android {
 
     defaultConfig {
         applicationId "it.dsequino.apitest"
-        minSdk 24
+        minSdk 26
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        versionCode 240100
+        versionName "0.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -76,4 +76,8 @@ dependencies {
     implementation("com.google.firebase:firebase-config-ktx")
 
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.3'
+    implementation 'com.kizitonwose.calendar:view:2.1.1'
+    implementation 'com.kizitonwose.calendar:compose:2.1.1'
 }
